@@ -1,0 +1,15 @@
+{
+    "name": "matacms/matacms-person",
+    "description": "Manages persons for MATACMS",
+    "keywords": ["yii2", "matacms-person", "person", "mata-cms", "cms"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "matacms\\person\\": ""
+        }
+    }
+}
