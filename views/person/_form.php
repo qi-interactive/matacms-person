@@ -21,7 +21,7 @@ use matacms\widgets\ActiveForm;
 
         <?= $form->field($model, 'URI')->slug('Name') ?>
 
-        <?= $form->submitButton() ?>
+        <?= $form->submitButton($model) ?>
 
     <?php ActiveForm::end(); ?>
 
