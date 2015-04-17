@@ -4,6 +4,7 @@ namespace matacms\person\models;
 
 use Yii;
 use yii\db\ActiveQuery;
+use mata\arhistory\behaviors\HistoryBehavior;
 
 /**
  * This is the model class for table "{{%client}}".
@@ -19,6 +20,12 @@ class Person extends \matacms\db\ActiveRecord {
     public static function tableName()
     {
         return '{{%matacms_person}}';
+    }
+
+    public function behaviors() {
+      return [
+      HistoryBehavior::className(),
+      ];
     }
 
     /**
