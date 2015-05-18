@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @link http://www.matacms.com/
+ * @copyright Copyright (c) 2015 Qi Interactive Limited
+ * @license http://www.matacms.com/license/
+ */
+
 namespace matacms\person\models;
 
 use Yii;
@@ -11,19 +17,14 @@ use matacms\person\models\Person;
  * PersonSearch represents the model behind the search form about `matacms\modules\client\models\Person`.
  */
 class PersonSearch extends Person {
-    /**
-     * @inheritdoc
-     */
+    
     public function rules() {
         return [
             [['Id'], 'integer'],
             [['Name', 'URI'], 'safe'],
         ];
     }
-
-    /**
-     * @inheritdoc
-     */
+    
     public function scenarios()
     {
         // bypass scenarios() implementation in the parent class
@@ -62,4 +63,5 @@ class PersonSearch extends Person {
 
         return $dataProvider;
     }
+
 }

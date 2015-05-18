@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @link http://www.matacms.com/
+ * @copyright Copyright (c) 2015 Qi Interactive Limited
+ * @license http://www.matacms.com/license/
+ */
+
 namespace matacms\person\models;
 
 use Yii;
@@ -14,23 +20,18 @@ use mata\arhistory\behaviors\HistoryBehavior;
  * @property string $URI
  */
 class Person extends \matacms\db\ActiveRecord {
-    /**
-     * @inheritdoc
-     */
+
     public static function tableName()
     {
         return '{{%matacms_person}}';
     }
 
     public function behaviors() {
-      return [
-      HistoryBehavior::className(),
-      ];
+        return [
+            HistoryBehavior::className(),
+        ];
     }
 
-    /**
-     * @inheritdoc
-     */
     public function rules() {
         return [
             [['Name', 'URI'], 'required'],
@@ -39,9 +40,6 @@ class Person extends \matacms\db\ActiveRecord {
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
     public function attributeLabels() {
         return [
             'Id' => 'ID',
