@@ -48,4 +48,8 @@ class Person extends \matacms\db\ActiveRecord {
         ];
     }
 
+    public function filterableAttributes() {
+        return ["Name"];
+    }
+
 }
