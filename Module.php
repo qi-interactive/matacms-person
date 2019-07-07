@@ -11,7 +11,7 @@ namespace matacms\person;
 class Module extends \mata\base\Module {
 
 	public function getNavigation() {
-		return false;
+		return  "/mata-cms/person/person";
 	}
 
 }
